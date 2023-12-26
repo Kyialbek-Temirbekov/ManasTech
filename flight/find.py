@@ -75,7 +75,7 @@ def get_location(dji):
 	print("\ny in meters:",y)
 	print("x in meters:",x)
 	lp = 40075.017 * 1000 * math.cos(math.radians(dji["GPSLatitude"])) # parallel_len = 40,075 * 1000 * cos(latitude)
-	lm = 40007.863 * 1000 * math.cos(math.radians(dji["GPSLongitude"])) # meridian_len = 40,075 * 1000 * cos(longitude)
+	lm = 40007.863 * 1000  # meridian_len = 40,075 * 1000
 	
 	y_degree = (360 * y) / lp # y_degree = (360 * y) / parallel_len
 	x_degree = (360 * x) / lm # x_degree = (360 * x) / meridian_len
