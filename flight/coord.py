@@ -123,5 +123,5 @@ degrees, minutes, seconds, direction = convert_dd_to_dms(location["GPSLongitude"
 print(f"{degrees}° {minutes}' {seconds}\" {direction}")
 
 
-
+###
 
